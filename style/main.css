@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 16px;
+    width: 500px;
+}
+
+.modal-header {
+    display: flex;
+    padding: 8px 16px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.modal-title {
+    flex: 1;
+}
+
+.modal-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-content label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-content ul {
+    margin: 0;
+}
+
+.modal-content textarea,
+.modal-content pre {
+    min-height: 200px;
+    resize: vertical;
+    border: 1px solid black;
+}
+
+.modal-content pre {
+    margin: 0;
+    height: 100px;
+    overflow: auto;
+}
+
+.errors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.errors > * {
+    background-color: rgb(211, 136, 106);
+    border: 1px solid rgb(134, 48, 14);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.module {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 16px;
+}
+
+.module-gui {
+    padding: 16px;
+}
+
+.module-header {
+    display: flex;
+    padding: 8px 16px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.module-title {
+    flex: 1;
+}
