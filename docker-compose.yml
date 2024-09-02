@@ -1,0 +1,16 @@
+version: '3'
+services:
+    nginx:
+        image: nginx:alpine
+        volumes:
+            - ./dist/:/usr/share/nginx/html/
+            - ./index.html:/usr/share/nginx/html/index.html
+        ports:
+            - "8080:80"
+
+    #tsc-watch:
+    #    image: node:latest
+    #    working_dir: /app
+    #    volumes:
+    #        - .:/app
+    #    command: sh -c "npm install && npx tsc --watch"
